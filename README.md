@@ -55,3 +55,23 @@ server.listen(9090);   //端口占用，可以用端口转发，后期查阅访�
 
 //前台页面  url访问  http://localhost:9090 即可
 
+
+#### 第三课-fs文件模块
+
+http------模块
+
+文件操作： fs--File System
+node官网链接： https://nodejs.org/dist/latest-v8.x/docs/api/fs.html
+
+异步VS同步
+异步-----多个操作可以同时进行，签一次的操作没完事，后一次也能开始
+同步-----一次一个
+
+readFile(读取文件名， function(err, data){
+//err  错误
+//data 读取文件里面的内容
+})
+
+writeFile(新建文件名， 新建文件传入的内容，  function(err){
+//err 错误
+})
