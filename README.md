@@ -75,3 +75,7 @@ readFile(读取文件名， function(err, data){
 writeFile(新建文件名， 新建文件传入的内容，  function(err){
 //err 错误
 })
+
+#### 第四课-http数据解析
+注意：
+提交form表单时。input标签一定要加上name=""的值，不然会提交没有信息
