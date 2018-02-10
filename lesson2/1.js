@@ -9,7 +9,7 @@ var server = http.createServer(function(req, res){  //创建一个server对象
         case '/1.html':
             res.write('1111');
             break;
-        case  '/2.html'
+        case  '/2.html':
             res.write('2222');
             break;
         default:
