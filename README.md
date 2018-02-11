@@ -79,3 +79,35 @@ writeFile(新建文件名， 新建文件传入的内容，  function(err){
 #### 第四课-http数据解析
 注意：
 提交form表单时。input标签一定要加上name=""的值，不然会提交没有信息
+
+http
+fs
+
+数据请求——
+前台->form、ajax、jsonp
+后台->一样
+
+前台 <-> 后台
+http
+
+请求方式：
+1.GET		数据在url中
+2.POST		数据不在url中
+
+------------------------------------------------------------------
+
+req.url=>"/aaa?user=blue&pass=123456"
+/aaa
+user=blue&pass=123456
+
+------------------------------------------------------------------
+
+GET数据解析
+1.自己切
+2.querystring		xxx=xx&xxx=xxx
+3.urlLib			aaa?xxx=xx&xx=12
+
+urlLib.parse(url, true);	pathname
+			                query
+
+			               
