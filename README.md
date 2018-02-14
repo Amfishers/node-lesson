@@ -129,4 +129,27 @@ obj={
 	query: {a: 12, b: 5}
 }			       
 
-			               
+#### 第六课
+
+http/fs/get/post
+
+用户注册、登录
+
+接口：
+/user?act=reg&user=aaa&pass=123456
+	{"ok": false, "msg": "原因"}
+
+/user?act=login&user=aaa&pass=123456
+	{"ok": true, "msg": "原因"}
+
+----------------------------------------------------------------------
+
+对文件访问：
+http://localhost:9090/1.html
+http://localhost:9090/ajax.js
+http://localhost:9090/1.jpg
+
+对接口访问：
+http://localhost:9090/user?act=xx...
+http://localhost:9090/news?act=xxx...
+
