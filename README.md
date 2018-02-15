@@ -153,3 +153,115 @@ http://localhost:9090/1.jpg
 http://localhost:9090/user?act=xx...
 http://localhost:9090/news?act=xxx...
 
+#### 第七课
+系统模块：
+
+Assertion Testing： 断言测试
+解释：在程序应用中，绝对应该出现的情况。 换一种说法，只要不是这种情况，程序就会崩溃。
+
+Async Hooks：
+
+Buffer： 二进制原始二进制的数据
+
+C++ Addons：C++拓展，提高性能
+
+C/C++ Addons - N-API：
+
+Child Processes：子进程。
+
+Cluster： 集群。充分利用计算机的多核性
+
+Command Line Options： 命令行参数
+
+Console：
+
+Crypto： 加密   MD5  sha（安全级别高于MD5）
+
+Debugger： 帮助调试程序，是命令行
+
+Deprecated APIs：
+
+DNS： 域名解析。
+
+Domain：域名（已经废弃了）
+
+ECMAScript Modules：
+
+Errors：异常。抛出来的异常情况
+
+Events：事件。（模拟事件模块）
+
+File System：读写文件
+
+Globals：
+
+HTTP：
+
+HTTP/2：
+
+HTTPS：加密 安全
+
+Inspector：
+
+Internationalization：
+
+Modules：帮助nodejs实现模块化的操作。  类似require()
+
+Net：网络操作。 例如发送一封邮件
+
+OS: operate system 操作系统信息。例如os.cpus() 当前cpu频率    os.freemen()当前空闲的内存 os.hostname()主机名字
+
+Path: 用来专门处理文件路径。 例如：path.dirname()返回目录名字。 path.extname()返回拓展名
+
+Performance Hooks:
+
+Process: 进程。 
+
+Punycode: 已经废弃了
+
+Query Strings: 将地址转化为json形式
+querystring.parse('foo=bar&baz=qux&baz=quux&corge')
+// returns
+{ foo: 'bar', baz: ['qux', 'quux'], corge: '' }
+
+Readline:
+
+REPL: 指nodejs的命令行
+
+Stream:流操作。 读一点文件 发送一点文件。 提高利用率。
+
+String Decoder: 字符串编码解码使用
+
+Timers: 定时器
+
+TLS/SSL:加密传输。
+
+Tracing:
+
+TTY: 连接到远端的命令行
+
+UDP/Datagram:  反义词TCP。  数据包传输协议
+
+URL:  解析url用
+
+Utilities: 小工具类。例如 util.isNumber() util.isObject()  util.isString()
+
+V8:  涉及nodejs v8引擎相关
+
+VM: 虚拟机
+
+ZLIB:用来做压缩的（本质上是流）
+
+
+比较重要模块：
+
+Crypto	加密
+Events	事件
+Net	网络操作
+OS	操作系统信息
+Path	处理文件路径
+Stream	流操作
+Timers	定时器
+ZLIB	压缩
+
+
