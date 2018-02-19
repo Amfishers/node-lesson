@@ -339,6 +339,7 @@ require
 ```
 npm init //初始化
 npm publish  //发布
+npm update   //更新包
 npm --force unpublish  //删除 
 ```
 
@@ -419,4 +420,27 @@ npm ERR! npm unpublish [<@scope>/]<pkg>[@<version>]
 
 
 
+#### 第九课
+npm输入安装命令  npm install express
+安装express模块 
+接着命令行运行 server.js 
 
+express框架
+1.安装
+2.配置
+3.接收请求
+4.响应
+
+---------------------------------------------------------------------------------------------------------------------
+
+非侵入式
+req
+
+原生：
+res.write();
+res.end();
+
+express：
+*res.send();
+res.write();
+res.end();
