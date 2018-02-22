@@ -433,14 +433,22 @@ express框架
 
 ---------------------------------------------------------------------------------------------------------------------
 
-非侵入式
-req
+express基本用法
+1、创建服务
+let server = express();
+2、监听端口
+server.listen(9090);
+3、处理请求
+express.use('地址', function(req, res){
+	res.send('asb');  //返回给前台信息
+	res.end();
+})
 
-原生：
-res.write();
-res.end();
+----------------------------------------
 
-express：
-*res.send();
-res.write();
-res.end();
+express的 request 和 response是经过封装过的
+
+req:
+res:
+例如： 原生res.write() 和 res.end() 仍保存的
+但是express 添加了 res.send() 这里的send()相比write() 功能更加强大，send可以输出json    		但是wrire()就会报错
