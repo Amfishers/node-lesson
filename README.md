@@ -433,22 +433,21 @@ express框架
 
 ---------------------------------------------------------------------------------------------------------------------
 
-express基本用法
-1、创建服务
-let server = express();
-2、监听端口
-server.listen(9090);
-3、处理请求
-express.use('地址', function(req, res){
-	res.send('asb');  //返回给前台信息
-	res.end();
-})
-
-----------------------------------------
-
 express的 request 和 response是经过封装过的
 
 req:
 res:
 例如： 原生res.write() 和 res.end() 仍保存的
-但是express 添加了 res.send() 这里的send()相比write() 功能更加强大，send可以输出json    		但是wrire()就会报错
+但是express 添加了 res.send() 这里的send()相比write() 功能更加强大，send可以输出json    		
+但是wrire()就会报错
+
+--------------------------------------------------------------------------------
+
+express中间件
+//express的插件形式 叫中间件
+
+npm安装： npm search express-static
+
+req.query 自带方法，从url中获取参数，转化成json形式
+res.send({ok: false, msg: '此用户不存在'});  这里发送给前台的是字符串形式
+前端ajax接收时候 应该对这一段字符串进行 json 解析，json = eval('('+str+')')
