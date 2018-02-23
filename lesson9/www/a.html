@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+<script src='ajax.js'></script>
+<script>
+window.onload=function(){
+    var btnUser = document.getElementById('user');
+    var btnPass = document.getElementById('pass');
+    var btnSub = document.getElementById('sub');
+
+    btnSub.onclick=function(){
+        ajax({
+            url: '/login',
+            data: {user: btnUser.value, pass: btnPass.value},
+            success: function(str){                
+                //注意： 这里是str传进来的是 字符串
+                //eval 是将字符串转化为 json形式
+                console.log(str) //这个是字符串形式
+                var json = eval('('+str+')');
+                console.log(json) //这个是json形式
+                if(json.ok){
+                    alert('登录成功');
+                }else{
+                    alert('失败'+ json.msg)
+                }
+            },
+            error: function(err){
+                alert('通信失败')
+            }
+        })
+
+    }
+
+};
+</script>
+</head>
+<body>
+
+    用户：<input type="text" id="user" name="user"> <br>
+    密码：<input type="password" id="pass" name="pass"> <br>
+    <input type="button" id="sub" value="登录">
+
+</body>
+</html>
