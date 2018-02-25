@@ -454,6 +454,8 @@ res.send({ok: false, msg: '此用户不存在'});  这里发送给前台的是�
 
 #### 第十课
 
+首先需要安装模块 express express-static
+
 Express：
 1.数据：GET、POST
 2.中间件：使用、写、链式操作
