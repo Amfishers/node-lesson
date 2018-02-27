@@ -539,5 +539,62 @@ cookie中会有一个session的ID，服务器利用这个session的ID来找到se
 ------------------------------------------------------------------------------------------------------
 需要安装组件：  express  express-static  cookie-parser cookie-session
 cookie：
-1、
-2、
+1、父级页面可以获取子级页面的cookie， 其他的访问不了
+2、空间非常小---省着用
+3、安全性非常差
+
+需要：
+1.精打细算
+2.校验cookie是否被篡改过
+
+a.发送cookie
+res.secret='字符串';
+res.cookie(名字, 值, {path: '/', maxAge: 毫秒, signed: true});
+
+b.读取cookie
+cookie-parser
+
+server.use(cookieParser('秘钥'));
+
+server.use(function (){
+	req.cookies		未签名版
+	req.signedCookies	签名版
+});
+
+c.删除cookie
+res.clearCookie(名字);
+
+--------------------------------------------------------------------------------------------------------------
+
+cookie-session
+
+server.use(cookieParser());
+server.use(cookieSession({
+	keys: [.., .., .., ..]
+}));
+
+server.use('/', function (){
+	req.session
+});
+
+delete req.session
+--------------------------------------------------------------------------------------------------------------
+
+session
+
+server.use(cookieParser('签名字符串'));
+server.use(cookieSession({
+
+}));
+
+server.use(function (req, res){
+	res.cookie(名字, 值, {signed: true});
+
+	res.cookies['user']
+	res.clearCookie('名字');
+
+	res.session['xxx']
+	delete res.session['xxx'];
+});
+
+
