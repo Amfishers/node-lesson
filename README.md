@@ -600,6 +600,15 @@ server.use(function (req, res){
 
 #### 第十二课 jade模板库1：介绍、配置安装、基础语法
 
+//npm安装 jade ejs
+
+首先运行 jade1.js 文件
+
+主要学习命令： 
+	jade.render()  //渲染html
+	jade.renderFile('./view/1.jade', {pretty: true});  //渲染文件，并且开启美化模式
+	
+
 模板引擎：
 jade-破坏式、侵入式、强依赖
 ejs-温和、非侵入式、弱依赖
@@ -616,7 +625,7 @@ html				<html>
 		div				<div></div>
 		div				<div></div>
 					</body>
-				</html>
+				    </html>
 
 ------------------------------------------------------------------------------------------------------------
 
