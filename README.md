@@ -811,3 +811,18 @@ http://www.xxxx.com/item/mod
 http://www.xxxx.com/item/del
 
 -------------------------------------------------------------------------------------------------------------------------
+
+
+#### 第十五课 数据库搭建
+
+安装MySQL， 官网以及百度都可以快速下载， 我在安装过程中遇到了需要 Visual Studio 2013 Redistributable， 所以得先下载依赖， 地址： https://www.microsoft.com/en-US/download/details.aspx?id=40784
+
+数据库操作工作 使用navicat for MySQL，去下载破解版。后期我补上文件。
+
+> navicat for MySQL
+新建数据库， 一般情况
+字符集： utf -- UTF-8 Unicode
+排序规则： utf8_general_ci
+
+主键： 每一条数据唯一的标识符、 性能高
+varchar: 字符串
