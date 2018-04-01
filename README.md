@@ -825,4 +825,4 @@ http://www.xxxx.com/item/del
 排序规则： utf8_general_ci
 
 主键： 每一条数据唯一的标识符、 性能高
-varchar: 字符串
+varchar: 字符串  int整数
