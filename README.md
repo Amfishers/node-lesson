@@ -826,3 +826,22 @@ http://www.xxxx.com/item/del
 
 主键： 每一条数据唯一的标识符、 性能高
 varchar: 字符串  int整数
+
+
+数据 - 数据库
+
+关系型数据库：
+MySQL、Oracle、SQLServer、Access、db2、fox pro
+
+MySQL：
+免费、中小网站
+优点：性能非常不错
+缺点：集群、容灾稍微弱一些
+
+Oracle：
+挺贵、大型应用、金融级
+优点：性能非常不错、集群、容灾非常强
+缺点：挺贵
+
+文件型：
+sqlite、mongodb
